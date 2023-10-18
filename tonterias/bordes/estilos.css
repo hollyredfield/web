@@ -1,0 +1,37 @@
+body{
+			background-color:red;
+		
+}
+div.StarWarra{
+				position:absolute;
+				width:600px;
+				border:10px pink solid;
+				height:700px;
+				border-radius:70px;
+				top:50%;
+				left:50%;
+				margin-left:-300px;
+				margin-top:-350px;
+				transition-duration:4s;
+}
+div.fshfvrv{	position:absolute;
+				width:60px;
+				border-width:10px;
+				border-color:green;
+				border-style:solid;
+				height:70px;
+				top:50%;
+				left:50%;
+				margin-left:-300px;
+				margin-top:-350px;
+				transition-duration:4s;
+}
+	
+div.StarWarra:hover{
+					transform:rotate(90deg);
+					transition-duration:4s;
+					transform:skew(-200deg);
+}
+
+					
+
