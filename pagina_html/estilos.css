@@ -1,3 +1,12 @@
 body{
     background-color: blue;
 }
+.animacion{
+    animation: animar 2s infinite;
+
+}
+@keyframes animar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
