@@ -1,0 +1,62 @@
+body{
+	background-color:yellow;
+}
+span.frase1{
+	background-color:blue;
+	color:pink;
+	text-decoration:underline;
+}
+p.xd{
+	text-align:center;
+}
+h2.lele{
+		text-decoration:line-through;
+}
+div.ss{
+		position:absolute;
+		width:100px;
+		height:100px;
+		background-color:white;
+		border:10px red solid;
+		background-image:url("free_kitty_icon_100x100px__by_insanitewolf-d4ysoa7 (1).gif");
+}
+div.rr{
+		transition-duration:5s;
+		position:absolute;
+		width:300px;
+		height:100px;
+		transform:rotate(-30deg);
+		background-color:red;
+		
+}
+div.rr:hover{
+			transition-duration:5s;
+			transform:rotate(-30deg);
+			background-color:black;
+}
+ p.párrafo{
+			font-size:15px;
+ }
+ div.capa1{
+			position:absolute;
+			width:300px;
+			height:200px;
+			background-color:blue;
+ }
+div.capa2{
+		text-align:right;
+}
+div.capa3{
+		position:absolute;
+		transition:rotate(30deg);
+
+
+			
+
+		
+		
+
+		
+	
+	
+	
