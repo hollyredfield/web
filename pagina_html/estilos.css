@@ -1,12 +1,17 @@
 body{
     background-color: blue;
 }
-.animacion{
-    animation: animar 2s infinite;
 
+/* estilo.css */
+.animacion {
+    width: 600px; /* Tamaño inicial de la imagen */
+    transition: transform 0.5s; /* Duración de la animación */
 }
-@keyframes animar {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
+
+.animacion:hover {
+    transform: scale(2.1); /* Escala 1.2 veces en el hover */
+    transform:rotate(90deg);
+					transition-duration:4s;
+					transform:skew(-200deg);
+
 }
