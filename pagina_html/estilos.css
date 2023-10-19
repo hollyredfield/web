@@ -1,21 +1,50 @@
-
+body{
+    background-color: antiquewhite;
+}
 
 /* estilo.css */
 .animacion {
     width: 400px; /* Tamaño inicial de la imagen */
-    transition: transform 1s; /* Duración de la animación */
+    /* Duración de la animación */
+    transition: transform 1s;
+    
 }
 
 .animacion:hover {
-    transform: scale(2.1); /* Escala 1.2 veces en el hover */
+    transition: transform 1s;
+    transform: scale(2.1); 
+    transition-duration:1.6s;
+    /* Escala 1.2 veces en el hover */
    /*  transform:rotate(90deg);
-					transition-duration:4s;
+					
 					transform:skew(-200deg); */
 
 }
-.xd{
-    text-decoration: none;
+.xd {
+    align-content: center;
+    animation: color-animation 4s linear;
+    transition: transform 0.3s; /* Add a smooth transition effect */
 }
-.xd:hover{
 
+.xd:hover {
+    transform: scale(1.2); /* Scale the link on hover */
+    font-size: 1.23m;
+        
 }
+
+.trial {
+    transition: transform 0.3s;
+   
+}
+.trial
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
