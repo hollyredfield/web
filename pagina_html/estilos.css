@@ -1,7 +1,4 @@
-body{
-    background-color: blue;
-    
-}
+
 
 /* estilo.css */
 .animacion {
@@ -14,5 +11,11 @@ body{
    /*  transform:rotate(90deg);
 					transition-duration:4s;
 					transform:skew(-200deg); */
+
+}
+.xd{
+    text-decoration: none;
+}
+.xd:hover{
 
 }
