@@ -2,3 +2,4 @@ pexels, vídeos sin derechos de autor
 unplash: para buscar imágenes sin derecho de autor:
 Pixabay: vector: ampliar imágenes sin perder resolución.
 morguefile: imágenes sin derechos de autor pero de pago
+leonardo.ai: crea imágenes con IA
