@@ -9,6 +9,7 @@
     border-radius: 5px;
     padding: 10px;
     justify-content: space-around;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .menu li {
@@ -23,11 +24,16 @@
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
 .menu a:hover {
     color: #55f;
+}
+
+/* Estilos para el menú con atenuación durante el desplazamiento */
+.menu.scrolling {
+    background-color: rgba(51, 51, 51, 0.8); /* Fondo atenuado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra al hacer scrolling */
 }
 
 /* Estilos para las secciones */
@@ -42,4 +48,13 @@ footer {
     text-align: center;
     padding: 10px;
     border-top: 1px solid #555;
+}
+
+/* Estilos para atenuar el fondo de la página durante el scrolling */
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)); /* Gradiente de atenuación */
+    transition: background 0.3s;
+}
+body.scrolling {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)); /* Gradiente de atenuación al hacer scrolling */
 }
