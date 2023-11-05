@@ -1,13 +1,33 @@
-/* Estilos para la barra de navegación */
-nav ul {
+/* Estilos para el menú */
+.menu {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: space-around;
 }
 
-nav li {
-    display: inline;
+.menu li {
     margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #55f;
 }
 
 /* Estilos para las secciones */
@@ -21,4 +41,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    border-top: 1px solid #555;
 }
