@@ -58,3 +58,13 @@ body {
 body.scrolling {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)); /* Gradiente de atenuación al hacer scrolling */
 }
+.caja {
+    border: 1px solid #555;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Otros estilos para el resto de la página */
