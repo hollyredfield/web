@@ -2,8 +2,8 @@
 
     display: flex
     
-    }
-    .container {
+}
+.container {
 
         width: 300px;
         
@@ -13,17 +13,17 @@
         
         position: relative;
         
-        }
+}
         
-        .static {
+.static {
         
         position: static;
         
         background-color: #ff5733;
         
-        }
+}
         
-        .relative {
+.relative {
         
         position: relative;
         
@@ -33,9 +33,9 @@
         
         background-color: #33ff57;
         
-        }
+}
         
-        .absolute {
+.absolute {
         
         position: absolute;
         
@@ -45,9 +45,9 @@
         
         background-color: #5733ff;
         
-        }
+}
         
-        .fixed {
+.fixed {
         
         position: fixed;
         
@@ -56,3 +56,4 @@
         right: 20px;
         
         background-color: #33a4ff;
+}
