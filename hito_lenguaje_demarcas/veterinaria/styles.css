@@ -7,7 +7,7 @@ body {
   }
   
   header, footer {
-    background-color: #333;
+    background-color: #3498db; /* Cambiado a azul claro */
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -17,7 +17,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    background-color: #444;
+    background-color: #5dade2; /* Cambiado a un tono más claro de azul */
     padding: 1rem;
   }
   
@@ -32,7 +32,7 @@ body {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
-    border: 2px solid #333;
+    border: 2px solid #3498db; /* Cambiado a azul claro */
     border-radius: 8px;
   }
   
@@ -57,9 +57,8 @@ body {
   }
   
   button {
-    background-color: #333;
+    background-color: #3498db; /* Cambiado a azul claro */
     color: #fff;
     border: none;
     cursor: pointer;
   }
-  
