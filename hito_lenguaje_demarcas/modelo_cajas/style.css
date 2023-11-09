@@ -1,0 +1,58 @@
+.cajapadre{
+
+    display: flex
+    
+    }
+    .container {
+
+        width: 300px;
+        
+        height: 300px;
+        
+        border: 1px solid #ccc;
+        
+        position: relative;
+        
+        }
+        
+        .static {
+        
+        position: static;
+        
+        background-color: #ff5733;
+        
+        }
+        
+        .relative {
+        
+        position: relative;
+        
+        top: 20px;
+        
+        left: 20px;
+        
+        background-color: #33ff57;
+        
+        }
+        
+        .absolute {
+        
+        position: absolute;
+        
+        top: 50px;
+        
+        right: 50px;
+        
+        background-color: #5733ff;
+        
+        }
+        
+        .fixed {
+        
+        position: fixed;
+        
+        top: 20px;
+        
+        right: 20px;
+        
+        background-color: #33a4ff;
