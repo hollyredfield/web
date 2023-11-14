@@ -57,6 +57,7 @@ nav.main-menu a {
 nav.main-menu a:hover {
     background-color: #555;
     color: #fff;
+    transform: scale(1.1); /* Efecto de escala al hacer hover */
 }
 
 /* Contenido principal */
@@ -73,6 +74,29 @@ nav.main-menu a:hover {
     text-align: justify;
 }
 
+.origenes-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.origenes-section p {
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.origenes-section a {
+    color: #007BFF;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.origenes-section a:hover {
+    color: #0056b3;
+}
+
 /* Estilos del footer */
 footer {
     text-align: center;
@@ -81,4 +105,5 @@ footer {
     padding: 10px;
     position: fixed;
     bottom: 0;
-    width:
+    width: 100%;
+}
