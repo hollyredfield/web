@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    transition: background 0.5s ease;
+}
+
+/* Estilos del header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #555;
+}
+
+/* Estilos del menú principal */
+nav.main-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #444;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav.main-menu:hover {
+    background-color: #666;
+}
+
+nav.main-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav.main-menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav.main-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+nav.main-menu a:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scale(1.1); /* Efecto de escala al hacer hover */
+}
+
+/* Contenido principal */
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+/* Sección específica de "CSS y SCSS" */
+.css-scss-section {
+    text-align: justify;
+}
+
+.css-scss-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.css-scss-section p {
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.css-scss-section a {
+    color: #007BFF;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.css-scss-section a:hover {
+    color: #0056b3;
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

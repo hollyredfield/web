@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS y SCSS - Instituto de Formación</title>
+    <link rel="stylesheet" href="cssscss.css">
+</head>
+<body>
+
+    <header>
+        <h1>Instituto de Formación - Lenguaje de Marcas</h1>
+    </header>
+
+    <nav class="main-menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="origenes.html">Orígenes de Lenguajes de Marcas</a></li>
+            <li><a href="estandares.html">Estándares y Organismos Oficiales</a></li>
+            <li><a href="css-scss.html">CSS y SCSS</a></li>
+            <li><a href="html5.html">HTML5 y Etiquetas Semánticas</a></li>
+            <li><a href="elementos-css.html">Elementos CSS</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <section class="css-scss-section">
+            <h2>CSS y SCSS</h2>
+            <p>
+                CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para controlar el aspecto y el formato
+                de un documento HTML. Permite definir estilos como colores, márgenes, fuentes y más, para mejorar la
+                presentación de una página web.
+            </p>
+            <p>
+                SCSS (Sassy CSS) es una extensión de CSS que agrega características como variables, anidamiento y
+                mixins, facilitando la escritura y mantenimiento del código. SCSS es luego compilado a CSS para su
+                implementación en navegadores.
+            </p>
+            <p>
+                La diferencia principal entre CSS y SCSS radica en la sintaxis. Mientras que CSS utiliza una sintaxis
+                más estricta, SCSS ofrece una sintaxis más flexible y amigable para el desarrollador.
+            </p>
+            <p>
+                A continuación, se presentan ejemplos de código que ilustran el uso básico de CSS y SCSS:
+            </p>
+
+            <div class="code-example">
+                <h3>CSS</h3>
+                <pre>
+                    <code>
+                        body {
+                            font-family: 'Arial', sans-serif;
+                            background-color: #f2f2f2;
+                        }
+
+                        h1 {
+                            color: #333;
+                        }
+
+                        .container {
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+                    </code>
+                </pre>
+            </div>
+
+            <div class="code-example">
+                <h3>SCSS</h3>
+                <pre>
+                    <code>
+                        $font-stack: 'Arial', sans-serif;
+                        $main-bg-color: #f2f2f2;
+
+                        body {
+                            font-family: $font-stack;
+                            background-color: $main-bg-color;
+                        }
+
+                        h1 {
+                            color: #333;
+                        }
+
+                        .container {
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Instituto de Formación - Lenguaje de Marcas</p>
+    </footer>
+
+</body>
+</html>
