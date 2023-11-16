@@ -1,32 +1,30 @@
-/* Estilos generales */
+/* General styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-    transition: background 0.5s ease;
+    background-color: #f5f5f5;
 }
 
-/* Estilos del header */
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
-    transition: background-color 0.3s ease;
 }
 
 header:hover {
     background-color: #555;
 }
 
-/* Estilos del menú principal */
+/* Main menu styles */
 nav.main-menu {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #444;
     padding: 10px;
-    transition: background-color 0.3s ease;
 }
 
 nav.main-menu:hover {
@@ -36,11 +34,11 @@ nav.main-menu:hover {
 nav.main-menu ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
+    display: flex;
 }
 
 nav.main-menu li {
-    display: inline;
     margin: 0 10px;
 }
 
@@ -51,43 +49,42 @@ nav.main-menu a {
     border: 1px solid #777;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    display: inline-block;
 }
 
 nav.main-menu a:hover {
     background-color: #555;
     color: #fff;
-    transform: scale(1.1); /* Efecto de escala al hacer hover */
+    transform: scale(1.1);
 }
 
-/* Contenido principal */
+/* Main content styles */
 .main-content {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #777;
     border-radius: 5px;
+    background-color: #fff;
 }
 
-/* Sección específica de "Elementos CSS" */
+/* Specific section styles */
 .elementos-css-section {
     text-align: justify;
+    margin-top: 40px;
 }
 
 .elementos-css-section h2 {
     color: #333;
     margin-bottom: 10px;
     font-size: 24px;
-    transition: color 0.3s ease;
 }
 
 .elementos-css-section p {
     line-height: 1.6;
     color: #555;
-    transition: color 0.3s ease;
 }
 
-/* Estilos del footer */
+/* Footer styles */
 footer {
     text-align: center;
     background-color: #333;

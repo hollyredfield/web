@@ -5,6 +5,9 @@ body {
     padding: 0;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     transition: background 0.5s ease;
+    line-height: 1.6;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 /* Estilos del header */
@@ -67,6 +70,8 @@ nav.main-menu a:hover {
     padding: 20px;
     border: 1px solid #777;
     border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Sección específica de "HTML5" */
@@ -82,7 +87,6 @@ nav.main-menu a:hover {
 }
 
 .html5-section p {
-    line-height: 1.6;
     color: #555;
     transition: color 0.3s ease;
 }

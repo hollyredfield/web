@@ -97,3 +97,100 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Estilos para el texto en capas bonitas */
+.layered-text {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.layered-text::before,
+.layered-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.layered-text::before {
+    color: #f00;
+    z-index: -1;
+    transform: translate(-5px, -5px);
+}
+
+.layered-text::after {
+    color: #0f0;
+    z-index: -2;
+    transform: translate(5px, 5px);
+}
+
+.layered-text:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para la página */
+body {
+    background: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav.main-menu {
+    background-color: #444;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav.main-menu a {
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav.main-menu a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.main-content {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.estandares-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.estandares-section p {
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
