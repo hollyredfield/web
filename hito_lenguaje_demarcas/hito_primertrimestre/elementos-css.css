@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Header styles */
+
 header {
     background-color: #333;
     color: #fff;
@@ -18,7 +18,7 @@ header:hover {
     background-color: #555;
 }
 
-/* Main menu styles */
+
 nav.main-menu {
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@ nav.main-menu a:hover {
     transform: scale(1.1);
 }
 
-/* Main content styles */
+
 .main-content {
     max-width: 800px;
     margin: 20px auto;
@@ -67,7 +67,6 @@ nav.main-menu a:hover {
     background-color: #fff;
 }
 
-/* Specific section styles */
 .elementos-css-section {
     text-align: justify;
     margin-top: 40px;
@@ -84,7 +83,7 @@ nav.main-menu a:hover {
     color: #555;
 }
 
-/* Footer styles */
+
 footer {
     text-align: center;
     background-color: #333;

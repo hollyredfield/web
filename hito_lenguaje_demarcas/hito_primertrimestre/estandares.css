@@ -9,7 +9,7 @@ body {
     line-height: 1.5;
 }
 
-/* Estilos del header */
+
 header {
     background-color: #1a1a1a;
     color: #fff;
@@ -22,7 +22,7 @@ header:hover {
     background-color: #333;
 }
 
-/* Estilos del menú principal */
+
 nav.main-menu {
     display: flex;
     justify-content: space-between;
@@ -92,7 +92,7 @@ nav.main-menu a:hover {
     }
 }
 
-/* Contenido principal */
+
 .main-content {
     max-width: 800px;
     margin: 20px auto;
@@ -105,7 +105,7 @@ nav.main-menu a:hover {
     grid-gap: 20px;
 }
 
-/* Sección específica de "Estándares" */
+
 .estandares-section {
     text-align: justify;
     border: 1px solid #ccc;
@@ -126,7 +126,7 @@ nav.main-menu a:hover {
     transition: color 0.3s ease;
 }
 
-/* Estilos para el texto en capas bonitas */
+
 .layered-text {
     position: relative;
     display: inline-block;
@@ -209,7 +209,7 @@ nav.main-menu a:hover {
     padding: 10px;
 }
 
-/* Estilos para los estándares y organismos oficiales */
+
 .estandares-section h2 {
     color: #333;
     margin-bottom: 10px;

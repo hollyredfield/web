@@ -7,7 +7,7 @@ body {
     transition: background 0.5s ease;
 }
 
-/* Estilos del header */
+
 header {
     background-color: #333;
     color: #fff;
@@ -20,7 +20,6 @@ header:hover {
     background-color: #555;
 }
 
-/* Estilos del menú principal */
 nav.main-menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -57,10 +56,10 @@ nav.main-menu a {
 nav.main-menu a:hover {
     background-color: #555;
     color: #fff;
-    transform: scale(1.1); /* Efecto de escala al hacer hover */
+    transform: scale(1.1); 
 }
 
-/* Contenido principal */
+
 .main-content {
     max-width: 800px;
     margin: 20px auto;
@@ -72,7 +71,6 @@ nav.main-menu a:hover {
     text-align: justify;
 }
 
-/* Sección específica de "CSS y SCSS" */
 .css-scss-section {
     text-align: justify;
     background-color: #f2f2f2;
