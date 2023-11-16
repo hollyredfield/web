@@ -1,18 +1,17 @@
-/* Estilos generales */
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-    transition: background 0.5s ease;
-    line-height: 1.6;
+    background-color: #f5f5f5;
+    line-height: 1.8;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
-/* Estilos del header */
+/* Header Styles */
 header {
-    background-color: #333;
+    background-color: #007BFF;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -20,20 +19,20 @@ header {
 }
 
 header:hover {
-    background-color: #555;
+    background-color: #0056b3;
 }
 
-/* Estilos del menú principal */
+/* Main Menu Styles */
 nav.main-menu {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #444;
+    background-color: #fff;
     padding: 10px;
     transition: background-color 0.3s ease;
 }
 
 nav.main-menu:hover {
-    background-color: #666;
+    background-color: #f5f5f5;
 }
 
 nav.main-menu ul {
@@ -49,32 +48,31 @@ nav.main-menu li {
 
 nav.main-menu a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
     padding: 10px;
-    border: 1px solid #777;
+    border: 1px solid #ccc;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block;
 }
 
 nav.main-menu a:hover {
-    background-color: #555;
-    color: #fff;
-    transform: scale(1.1); /* Efecto de escala al hacer hover */
+    background-color: #f5f5f5;
+    color: #007BFF;
 }
 
-/* Contenido principal */
+/* Main Content */
 .main-content {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #777;
+    border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Sección específica de "HTML5" */
+/* HTML5 Specific Section */
 .html5-section {
     text-align: justify;
 }
@@ -84,11 +82,30 @@ nav.main-menu a:hover {
     margin-bottom: 10px;
     font-size: 24px;
     transition: color 0.3s ease;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.html5-section h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
 }
 
 .html5-section p {
     color: #555;
     transition: color 0.3s ease;
+    text-align: justify;
+    margin: 10px;
+    line-height: 1.5;
 }
 
 .html5-section a {
@@ -101,13 +118,27 @@ nav.main-menu a:hover {
     color: #0056b3;
 }
 
-/* Estilos del footer */
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Box Layer Styles */
+.box-layer {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
 }
+
+/* Box Layer Tag Styles */
+.box-layer h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.box-layer p {
+    color: #555;
+    text-align: justify;
+    line-height: 1.5;
+}
+

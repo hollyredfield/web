@@ -107,12 +107,3 @@ nav.main-menu a:hover {
 }
 
 /* Estilos del footer */
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}

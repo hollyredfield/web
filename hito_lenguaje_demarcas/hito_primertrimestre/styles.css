@@ -1,12 +1,18 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* FILEPATH: /workspaces/web/hito_lenguaje_demarcas/hito_primertrimestre/styles.css */
+
+/* Reset */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    position: relative; /* Añadido para posicionar el contenido sobre el pseudo-elemento */
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-    transition: background 0.5s ease; /* Añadido para la transición al hacer scroll */
 }
 
+/* Typography */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background */
 body::before {
     content: "";
     position: fixed;
@@ -15,34 +21,34 @@ body::before {
     width: 100%;
     height: 100%;
     background: url('black.jpg') center/cover fixed no-repeat;
-    filter: blur(5px); /* Agregado para difuminar la imagen de fondo */
-    z-index: -1; /* Para colocar el pseudo-elemento detrás del contenido del body */
+    filter: blur(5px);
+    z-index: -1;
 }
 
-/* Resto de tu código CSS... */
-
+/* Header */
 header {
     background-color: #1c2a48;
     color: #fff;
     text-align: center;
     padding: 20px;
-    transition: background-color 0.3s ease; /* Añadido efecto animado */
+    transition: background-color 0.3s ease;
 }
 
 header:hover {
-    background-color: #2c3e5a; /* Cambiado el color de fondo al hacer hover */
+    background-color: #2c3e5a;
 }
 
+/* Navigation */
 nav.main-menu {
     display: grid;
     grid-template-columns: 1fr;
     background-color: #2c3e5a;
     padding: 10px;
-    transition: background-color 0.3s ease; /* Añadido efecto animado */
+    transition: background-color 0.3s ease;
 }
 
 nav.main-menu:hover {
-    background-color: #1c2a48; /* Cambiado el color de fondo al hacer hover */
+    background-color: #1c2a48;
 }
 
 nav.main-menu ul {
@@ -62,7 +68,7 @@ nav.main-menu a {
     padding: 10px;
     border: 1px solid #fff;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Añadidos efectos animados */
+    transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block;
 }
 
@@ -71,7 +77,6 @@ nav.main-menu a:hover {
     color: #2c3e5a;
 }
 
-/* Efecto desplegable */
 nav.main-menu li:hover ul {
     display: block;
 }
@@ -92,7 +97,7 @@ nav.main-menu ul ul a {
     padding: 10px;
 }
 
-/* Contenido principal */
+/* Main Content */
 .main-content {
     max-width: 800px;
     margin: 20px auto;
@@ -101,7 +106,7 @@ nav.main-menu ul ul a {
     border-radius: 5px;
 }
 
-/* Barra lateral mejorada */
+/* Sidebar */
 .sidebar {
     float: left;
     width: 20%;
@@ -139,6 +144,7 @@ nav.main-menu ul ul a {
     background-color: #f0f0f0;
 }
 
+/* Footer */
 footer {
     text-align: center;
     background-color: #1c2a48;
@@ -149,7 +155,7 @@ footer {
     width: 100%;
 }
 
-/* Nueva sección de fotos */
+/* Photo Section */
 .photo-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -162,36 +168,36 @@ footer {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos animados al hacer hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .photo:hover {
-    transform: scale(1.05); /* Zoom al hacer hover */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .photo img {
     max-width: 100%;
-    height: auto; /* Asegura que la imagen no pierda su proporción original */
+    height: auto;
 }
 
 .photo p {
     margin-top: 10px;
-    background-color: #fff; /* Fondo blanco para el texto */
+    background-color: #fff;
     padding: 10px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.8; /* Opacidad para el fondo del texto */
-    transition: opacity 0.3s ease; /* Efecto animado al hacer hover */
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
 }
 
 .photo:hover p {
-    opacity: 1; /* Aumenta la opacidad al hacer hover */
+    opacity: 1;
 }
 
-/* Estilos para el texto en capas bonitas */
+/* Text Layer */
 .text-layer {
     position: relative;
     display: inline-block;
@@ -204,7 +210,7 @@ footer {
     left: 0;
     z-index: 1;
     color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .text-layer::after {

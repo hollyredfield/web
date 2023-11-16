@@ -5,11 +5,13 @@ body {
     padding: 0;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     transition: background 0.5s ease;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* Estilos del header */
 header {
-    background-color: #333;
+    background-color: #1a1a1a;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -17,30 +19,31 @@ header {
 }
 
 header:hover {
-    background-color: #555;
+    background-color: #333;
 }
 
 /* Estilos del menú principal */
 nav.main-menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
     padding: 10px;
     transition: background-color 0.3s ease;
-}
-
-nav.main-menu:hover {
-    background-color: #666;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav.main-menu ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
 nav.main-menu li {
-    display: inline;
     margin: 0 10px;
 }
 
@@ -48,16 +51,45 @@ nav.main-menu a {
     text-decoration: none;
     color: #fff;
     padding: 10px;
-    border: 1px solid #777;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block;
 }
 
 nav.main-menu a:hover {
-    background-color: #555;
+    background-color: #333;
     color: #fff;
-    transform: scale(1.1); /* Efecto de escala al hacer hover */
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    nav.main-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    nav.main-menu.open {
+        height: 200px;
+    }
+
+    nav.main-menu ul {
+        flex-direction: column;
+    }
+
+    nav.main-menu li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }
 
 /* Contenido principal */
@@ -67,11 +99,18 @@ nav.main-menu a:hover {
     padding: 20px;
     border: 1px solid #777;
     border-radius: 5px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
 }
 
 /* Sección específica de "Estándares" */
 .estandares-section {
     text-align: justify;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .estandares-section h2 {
@@ -87,16 +126,6 @@ nav.main-menu a:hover {
     transition: color 0.3s ease;
 }
 
-/* Estilos del footer */
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 /* Estilos para el texto en capas bonitas */
 .layered-text {
     position: relative;
@@ -142,7 +171,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #1a1a1a;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -150,7 +179,7 @@ header {
 }
 
 nav.main-menu {
-    background-color: #444;
+    background-color: #1a1a1a;
     padding: 10px;
     transition: background-color 0.3s ease;
 }
@@ -158,13 +187,12 @@ nav.main-menu {
 nav.main-menu a {
     color: #fff;
     padding: 10px;
-    border: 1px solid #777;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav.main-menu a:hover {
-    background-color: #555;
+    background-color: #333;
     color: #fff;
 }
 
@@ -172,8 +200,32 @@ nav.main-menu a:hover {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 .estandares-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+/* Estilos para los estándares y organismos oficiales */
+.estandares-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+.estandares-section p {
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
     color: #333;
     margin-bottom: 10px;
     font-size: 24px;
@@ -186,11 +238,113 @@ nav.main-menu a:hover {
     transition: color 0.3s ease;
 }
 
-footer {
+/* Estilos para el formulario */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-section input[type="submit"] {
     background-color: #333;
     color: #fff;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-section input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.form-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+/* Estilos para el grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el texto */
+.texto-bonito {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.texto-bonito::before,
+.texto-bonito::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+}
+
+.texto-bonito::before {
+    color: #f00;
+    z-index: -1;
+    transform: translate(-5px, -5px);
+}
+
+.texto-bonito::after {
+    color: #0f0;
+    z-index: -2;
+    transform: translate(5px, 5px);
+}
+
+.texto-bonito:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para las animaciones */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideInFromLeft 0.5s ease;
 }

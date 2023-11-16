@@ -1,6 +1,6 @@
 /* Typography */
 html {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
 }
@@ -11,26 +11,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    color: #333;
 }
 
 h2 {
     font-size: 2rem;
+    color: #333;
 }
 
 p {
-    margin-bottom: 0.75rem;
-    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    color: #555;
 }
 
 a {
-    color: #007BFF;
+    color: #FF6B6B;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #333;
 }
 
 /* Layout */
@@ -53,20 +56,21 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #2c3e50;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 2rem;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 /* Main Menu */
 nav.main-menu {
-    background-color: #34495e;
+    background-color: #555;
     padding: 1rem;
 }
 
@@ -90,7 +94,7 @@ nav.main-menu a {
 }
 
 nav.main-menu a:hover {
-    background-color: #2c3e50;
+    background-color: #FF6B6B;
     color: #fff;
 }
 
@@ -105,33 +109,123 @@ nav.main-menu a:hover {
 /* Origenes Section */
 .origenes-section {
     text-align: justify;
+    border: 2px solid #FF6B6B;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .origenes-section h2 {
-    color: #2c3e50;
-    font-size: 2rem;
+    color: #FF6B6B;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .origenes-section p {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 
 .origenes-section a {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
+    color: #555;
 }
 
-/* Footer */
-footer {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1rem;
+/* Layered Text */
+.layered-text {
+    position: relative;
+    display: inline-block;
+}
+
+.layered-text span {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.layered-text span:nth-child(2) {
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.layered-text span:nth-child(3) {
+    z-index: 3;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+/* Main Menu */
+nav.main-menu {
+    background-color: #555;
+    padding: 1rem;
+}
+
+nav.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.main-menu li {
+    margin: 0 1rem;
+}
+
+nav.main-menu a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav.main-menu a:hover {
+    background-color: #FF6B6B;
+    color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Origenes Section */
+.origenes-section {
+    text-align: justify;
+}
+
+.origenes-section h2 {
+    color: #FF6B6B;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.origenes-section p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.origenes-section a {
+    font-size: 1.125rem;
+    color: #555;
 }
 /* Layered Text */
 .layered-text {
@@ -192,10 +286,18 @@ footer {
     z-index: 10;
     text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
+
+/* Colors */
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #34495e;
-    --tertiary-color: #1f2c39;
+    --primary-color: #FF6B6B;
+    --secondary-color: #FFE66D;
+    --tertiary-color: #6BFFB8;
     --background-color: #F5F5F5;
     --text-color: #333;
+}
+#footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
 }
