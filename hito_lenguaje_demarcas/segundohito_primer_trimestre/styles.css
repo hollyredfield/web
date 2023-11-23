@@ -1,10 +1,3 @@
-// Variable overrides first
-$primary: #900;
-$enable-shadows: true;
-$prefix: "mo-";
-
-// Then import Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -81,7 +74,6 @@ nav ul li a {
 
 section#cv {
     background-color: white;
-}
     padding: 20px;
     border-radius: 8px;
     max-width: 800px;
@@ -134,7 +126,6 @@ form input[type="tel"]:focus,
 form select:focus,
 form textarea:focus {
     border: 1px solid #4CAF50;
-    color: #000000;
 }
 
 form input[type="submit"] {
@@ -164,14 +155,5 @@ video:hover {
     transform: scale(1.05);
 }
 nav {
-    color: green;
-}
-
-h1.xd {
-    color: green;
-    text-align: center;
-}
-h1.xd.hover {
-    color: red;
-    text-align: left;
+    colour: green;
 }
