@@ -1,17 +1,16 @@
-body {
+body, body  {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: -10px;
+    padding: -100px;
     background-color: #f8f8f8;
+    background-image: url("batman.jpeg");
+    backdrop-filter: blur(25px);
+
     
-    background-size: cover;
-    background-position: center;
-    background-repeat: cover;
-    
-    scroll-behavior: smooth;
 }
-header {
-    background-color: #313a31;
+
+header, header a {
+    background-color: #000000;
     color: white;
     padding: 10px 0;
     animation: fadeIn 1s ease-in-out;
@@ -62,17 +61,6 @@ nav ul li {
     animation: fadeIn 1s ease-in-out;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -86,26 +74,12 @@ section#cv {
     margin: 20px auto;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     border: 5px solid #9c3535;
-   
-   
+    border-radius: 50px;
     transition: transform 1s ease-in-out;
-    
 }
 
 section#cv:hover {
     transform: scale(1.2);
-    transition: transform 1s ease-in-out;
-}
-
-
-
-form {
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 500px;
-    margin: auto;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 form label {
@@ -162,8 +136,10 @@ video {
 video:hover {
     transform: scale(1.05);
 }
+
 nav {
-    colour: green;
+    color: green;
+    text-align: center;
 }
 
 img {
@@ -173,14 +149,21 @@ img {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
-.footer{
-    align-content: flex-end;
-    justify-content: flex-start;
-}
-.title{
+
+#h1 {
     text-align: center;
+    color: #000000;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
-    color: #9c3535;
+    font-weight: bold;
     text-shadow: 2px 2px 4px #000000;
 }
+     
+myVideo.container {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    backdrop-filter: blur(10px);
+}       
