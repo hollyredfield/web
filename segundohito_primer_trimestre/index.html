@@ -19,13 +19,32 @@
         </nav>
     </header>
  
-    <section class="container">
+    <section class="container" >
     <!-- Incluyo la clase container de Bootstrap -->
-        <h1>El señor Oscuro</h1>   
-        <video width="640" height="360" controls>
+        <h1 id="title">El señor Oscuro</h1>
+        <video id="myVideo" width="640" height="360" controls>
             <source src="lego.mp4" type="video/mp4">
             Tu navegador no soporta el tag de video.
         </video>
+
+        <script>
+            const video = document.getElementById('myVideo');
+
+            video.addEventListener('play', function() {
+                console.log('Video is playing');
+                // Add your custom logic here
+            });
+
+            video.addEventListener('pause', function() {
+                console.log('Video is paused');
+                // Add your custom logic here
+            });
+
+            video.addEventListener('ended', function() {
+                console.log('Video has ended');
+                // Add your custom logic here
+            });
+        </script>
     </section>
 
     <footer class="container">
@@ -34,5 +53,10 @@
     </footer>
     <!-- bootstrap CSS CDN (script)-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('title').addEventListener('click', function() {
+            this.style.color = this.style.color === 'blue' ? 'black' : 'blue';
+        });
+        </script>
 </body>
 </html>

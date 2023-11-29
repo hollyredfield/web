@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
-    background-image: url('batman.jpeg');
+    
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(15px);
+    background-repeat: cover;
+    
     scroll-behavior: smooth;
 }
 header {
@@ -86,7 +86,10 @@ section#cv {
     margin: 20px auto;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     border: 5px solid #9c3535;
+   
+   
     transition: transform 1s ease-in-out;
+    
 }
 
 section#cv:hover {
@@ -170,5 +173,14 @@ img {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
-footer {
-    backdrop-filter: blur(10px);
+.footer{
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #9c3535;
+    text-shadow: 2px 2px 4px #000000;
+}
