@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js" defer></script>
+    <title>Tu Nombre - Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>   
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cv.html">Currículum</a></li>
+                <li><a href="contacta.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h1 class="xd">Contacta conmigo</h1>
+        <form id="contactForm">
+            <label for="name">Nombre/Empresa:</label>
+            <input type="text" id="name" name="name" required pattern="^[\D]{3,}$">
+            
+            <label for="profession">Sector/Profesión:</label>
+            <input type="text" id="profession" name="profession" required pattern="^[a-zA-Z\s]{3,}$">
+            
+            <label for="country">País:</label>
+            <select id="country" name="country" required>
+                <option value="">Seleccione un país</option>
+                <option value="España">España</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Francia">Francia</option>
+                <option value="Inglaterra">Inglaterra</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Italia">Italia</option>
+                <option value="Rusia">Rusia</option>
+                <option value="China">China</option>
+                <option value="Japón">Japón</option>
+
+            </select>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required pattern="^\d{8,12}$">
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required minlength="5"></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Álex. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
