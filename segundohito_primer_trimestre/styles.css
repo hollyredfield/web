@@ -167,3 +167,8 @@ myVideo.container {
     animation: fadeIn 1s ease-in-out;
     backdrop-filter: blur(10px);
 }       
+@media (max-width: 100%) {
+    body {
+        /* Your styles here */
+    }
+}
