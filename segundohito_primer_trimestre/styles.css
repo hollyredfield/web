@@ -172,3 +172,31 @@ myVideo.container {
         /* Your styles here */
     }
 }
+.batman-info {
+    background: url('path-to-your-image.jpg');
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.batman-info h1, .batman-info h2 {
+    text-align: center;
+    transition: color 0.5s;
+}
+
+.batman-info p {
+    font-size: 1em;
+    line-height: 1.5;
+    transition: opacity 2s;
+}
+
+#batman-title {
+    font-size: 2em;
+}
+
+#batman-subtitle, #batman-powers, #batman-allies {
+    font-size: 1.5em;
+}
